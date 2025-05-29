@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #004e92, #000428);
+}
+
+h1 {
+    color: #2DD881;
+    text-align: center;
+}
+
+.rifa-info {
+    height: 200px;
+    width: auto;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-image: url('../img/Foto\ iPhone\ 12\ com\ fundo\ preto\ \ \(1\).jpg');
+    background-size: cover;
+    /* cobre a div sem distorcer */
+    background-position: center;
+    /* centraliza a imagem */
+    background-repeat: no-repeat;
+    /* não repete a imagem */
+
+}
+
+.rifa-info p {
+    position: relative;
+    top: 100px;
+    color: #2DD881;
+}
+
+.rifa-info h2 {
+    color: #2DD881;
+}
+
+.numeros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.numero {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.numero.selecionado {
+    background: #2196F3;
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+}
+
+.numero.vendido {
+    background: #f44336;
+    cursor: not-allowed;
+}
+
+.resumo {
+    background: #e8f4fc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.btn {
+    background: #3498db;
+    color: #1C0B19;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btn:disabled {
+    background: #2DD881;
+    cursor: not-allowed;
+}
+
+.legenda {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.legenda-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.legenda-cor {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+    .numeros-grid {
+        grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    }
+
+    .numero {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+}

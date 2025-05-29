@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/index.css">
+    <title>Rifa Online - REBECA</title>
+  
+</head>
+<body>
+    <h1>Rifa Casa De Adolecentes</h1>
+    
+    <div class="rifa-info">
+        <p><strong>Prêmio: iPhone 12</strong></p>
+        <p><strong>Valor por número: R$ 10,00</strong></p>
+        <p><strong>Data do sorteio: 29/07/2025</strong></p>
+    </div>
+    
+    <div class="legenda">
+        <div class="legenda-item">
+            <div class="legenda-cor" style="background-color: #4CAF50;"></div>
+            <span>Disponível</span>
+        </div>
+        <div class="legenda-item">
+            <div class="legenda-cor" style="background-color: #2196F3;"></div>
+            <span>Selecionado</span>
+        </div>
+        <div class="legenda-item">
+            <div class="legenda-cor" style="background-color: #f44336;"></div>
+            <span>Vendido</span>
+        </div>
+    </div>
+    
+    <h2>Selecione seus números</h2>
+    <div class="numeros-grid" id="numerosGrid">
+        <!-- Os números serão gerados por JavaScript -->
+    </div>
+    
+    <div class="resumo" id="resumoCompra" style="display: none;">
+        <h3>Resumo da Compra</h3>
+        <p><strong>Números selecionados:</strong> <span id="numerosSelecionados"></span></p>
+        <p><strong>Total:</strong> R$ <span id="totalCompra">0,00</span></p>
+    </div>
+    
+    <button class="btn" id="btnComprar" disabled></strong>Comprar números selecionados</strong></button>
+
+    <script src="js/ny.js"></script>
+
+</body>
+</html>
